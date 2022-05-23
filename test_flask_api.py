@@ -25,12 +25,14 @@ class test_fcn(Resource):
 
 
 if __name__ == '__main__':
-    parser = argparse.ArgumentParser()
+    #parser = argparse.ArgumentParser()
     #parser.add_argument("-p", "--port", help="port")
-    parser.add_argument('-p', '--port', type=int, help='Port number', required=True)
-    args = parser.parse_args()
+    #parser.add_argument('-p', '--port', type=int, help='Port number', required=True)
+    #args = parser.parse_args()
 
 
-    print('Starting feast db reader on port ', args.port)
-    print(args.port)
-    app.run(debug=false, host='0.0.0.0', port=args.port)
+    #print('Starting feast db reader on port ', args.port)
+    print('Starting feast db reader on port ', 3000)
+    #print(args.port)
+    #app.run(debug=false, host='0.0.0.0', port=args.port)
+    app.run(debug=false, host='0.0.0.0', port=3000)

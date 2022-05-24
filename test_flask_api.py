@@ -2,7 +2,7 @@ from flask import Flask, request
 from flask_restx import Api, Resource, fields
 import time
 
-import argparse
+#import argparse
 
 app = Flask(__name__)
 api = Api(app, version='1.0', title='FE@ST DB READER',
@@ -35,4 +35,4 @@ if __name__ == '__main__':
     print('Starting feast db reader on port ', 3000)
     #print(args.port)
     #app.run(debug=false, host='0.0.0.0', port=args.port)
-    app.run(debug=false, host='0.0.0.0', port=3000)
+    app.run(debug=False, host='0.0.0.0', port=3000)
